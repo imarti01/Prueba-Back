@@ -15,7 +15,7 @@ const checkJWT = async (req, res, next) => {
     const { id } = jwt.verify(token, process.env.JWT_SECRET_KEY);
     const employee = await Employee.findById(id);
 
-    if (!user) {
+    if (!employee) {
       return res.status(401).json({ ok: false, msg: 'Invalid token' });
     }
 

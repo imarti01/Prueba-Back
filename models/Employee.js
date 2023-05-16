@@ -13,6 +13,10 @@ const EmployeeSchema = new Schema({
     type: String,
     required: true,
   },
+  favCar: {
+    type: String,
+    required: false,
+  },
 });
 
 module.exports = model('Employee', EmployeeSchema);
