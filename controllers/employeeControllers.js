@@ -54,6 +54,11 @@ const loginEmployee = async (req, res) => {
   }
 };
 
+const changeFavCar = async (req, res) => {
+  console.log(req.body);
+};
+
 module.exports = {
   loginEmployee,
+  changeFavCar,
 };
