@@ -3,7 +3,7 @@ const {
   loginEmployee,
   changeFavCar,
 } = require('../controllers/employeeControllers');
-const checkJWT = require('../middlewares/jwt');
+const checkJWT = require('../middlewares/checkJWT');
 
 const router = express.Router();
 

@@ -14,7 +14,8 @@ const EmployeeSchema = new Schema({
     required: true,
   },
   favCar: {
-    type: String,
+    type: Schema.Types.ObjectId,
+    ref: 'Car',
     required: false,
   },
 });

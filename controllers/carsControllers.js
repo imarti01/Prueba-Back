@@ -1,4 +1,5 @@
 const Car = require('../models/Car');
+const Employee = require('../models/Employee');
 const { seedCars } = require('./seedCars');
 
 const getAllCars = async (req, res) => {

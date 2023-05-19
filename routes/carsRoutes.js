@@ -1,7 +1,6 @@
 const express = require('express');
-const { loginEmployee } = require('../controllers/employeeControllers');
 const { getAllCars } = require('../controllers/carsControllers');
-const checkJWT = require('../middlewares/jwt');
+const checkJWT = require('../middlewares/checkJWT');
 
 const router = express.Router();
 
